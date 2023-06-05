@@ -87,18 +87,18 @@ def generate_launch_description():
                         {'transfer_precision': precision}
             ]
         ),
-        Node(
-            package='modem_communication',
-            namespace='modem',
-            executable='modem_data_communicator',
-            name='subnero_communicator',
-            parameters=[
-                        {'sample_time': sample_time},
-                        {'transfer_delay': transfer_delay},
-                        {'modem_IP': modem_IP},
-                        {'modem_port': modem_port},
-                        {'lower_bound': random_bounds[0]},
-                        {'upper_bound': random_bounds[1]}
-            ]
-        ),
+        # Node(
+        #     package='modem_communication',
+        #     namespace='modem',
+        #     executable='modem_data_communicator',
+        #     name='subnero_communicator',
+        #     parameters=[
+        #                 {'sample_time': sample_time},
+        #                 {'transfer_delay': transfer_delay},
+        #                 {'modem_IP': modem_IP},
+        #                 {'modem_port': modem_port},
+        #                 {'lower_bound': random_bounds[0]},
+        #                 {'upper_bound': random_bounds[1]}
+        #     ]
+        # ),
     ])
